@@ -5,17 +5,17 @@ import time
 def replace_avg(data, column_name):
   avg = 0
   count = 0
-  for data_value in data[column_name]:
-    if (not pd.isna(data_value)):
-      avg += data_value
+  for data_item in data[column_name]:
+    if (not pd.isna(data_item)):
+      avg += data_item
       count += 1
   avg = avg // count
   new_column = []
-  for data_value in data[column_name]:
-    if pd.isna(data_value):
+  for data_item in data[column_name]:
+    if pd.isna(data_item):
       new_column.append(avg)
     else :
-      new_column.append(data_value)
+      new_column.append(data_item)
   
   return new_column
 
