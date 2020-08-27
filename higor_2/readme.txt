@@ -4,3 +4,10 @@
     2.1 - eg.: python3 lab4.py data/iris.csv manhattan ONDE data/iris.csv é o path + o nome do seu arquivo, e a métrica pode ser manhattan para L1 e euclidean para L2.
 3 - para mais opções de execução faça: python3 lab4.py --help
 4 - para executar o exemplo do dataset Iris: python3 lab4.py --example
+
+Nota: se passar como parâmetro o dataset iris.csv contido na pasta data, o algoritmo não funciona,
+porque os dados possuem labels. O algoritmo funciona somente para dados numéricos e sem missing values.
+
+Se quiser executar o exemplo, utilizar a opção --example.
+
+
